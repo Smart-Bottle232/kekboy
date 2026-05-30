@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Water Bottle | PT Bougenville</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="text-xl font-bold tracking-tight text-blue-600">PT Bougenville</span>
+            </div>
+            <div class="hidden md:flex gap-6 font-medium text-slate-600">
+                <a href="#fitur" class="hover:text-blue-600 transition">Spesifikasi</a>
+                <a href="#cara-kerja" class="hover:text-blue-600 transition">Cara Kerja</a>
+                <a href="#lokasi" class="hover:text-blue-600 transition">Lokasi Ritel</a>
+            </div>
+            <a href="https://wa.me/qr/GYKFDW2VKSIGL1" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-full shadow-sm text-sm transition">
+                Pesan Sekarang
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="relative px-6 py-16 md:py-24 max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+                Prototipe Fisik Berbasis IoT
+            </span>
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight mt-4 leading-tight">
+                Smart Water Bottle
+            </h1>
+            <p class="text-lg text-slate-600 mt-4 font-medium italic">
+                "Stay Hydrated, Stay Productive"
+            </p>
+            <p class="text-slate-600 mt-4 leading-relaxed">
+                Solusi pintar pemantau hidrasi harian untuk menjaga konsentrasi belajar Anda di kampus. Dilengkapi sistem monitoring volume air otomatis dan alarm pengingat aktif interaktif.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 mt-8">
+                <a href="https://wa.me/pt_bougenville_itera" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl shadow-lg text-center transition">
+                    Pesan via WhatsApp
+                </a>
+                <a href="https://instagram.com/pt_bougenville" class="border border-slate-300 hover:bg-slate-100 text-slate-700 font-semibold px-6 py-3 rounded-xl text-center transition">
+                    Ikuti Instagram Kami
+                </a>
+            </div>
+        </div>
+        <!-- Ilustrasi Produk -->
+        <div class="bg-gradient-to-tr from-blue-100 to-indigo-50 p-8 rounded-3xl border border-blue-200/50 shadow-inner flex justify-center items-center relative">
+            <div class="w-64 h-96 bg-slate-300 rounded-2xl shadow-xl flex flex-col justify-between p-4 relative overflow-hidden border border-slate-400">
+                <div class="bg-slate-800 text-cyan-400 font-mono text-xs p-2 rounded border border-slate-700 shadow-md text-center">
+                    750 ml <br> 75%
+                </div>
+                <div class="w-full text-center font-bold text-slate-600 tracking-wider text-sm border-t border-dashed border-slate-400 pt-2">
+                    SMART WATER BOTTLE
+                </div>
+            </div>
+            <div class="absolute bottom-4 right-4 bg-white px-3 py-1 rounded-lg shadow-sm border border-slate-200 text-xs text-slate-500">
+                Kapasitas Nyata 1000 ml
+            </div>
+        </div>
+    </header>
+
+    <!-- SPESIFIKASI TEKNIS (Berdasarkan Cuplikan layar 2026-05-30 100956.jpg) -->
+    <section id="fitur" class="bg-white border-y border-slate-200 px-6 py-16">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-xl mx-auto">
+                <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Arsitektur & Spesifikasi</h2>
+                <p class="text-slate-600 mt-2">Ditenagai oleh komponen mikroelektronika andal untuk akurasi monitoring tinggi.</p>
+            </div>
+
+            <!-- Grid Komponen -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                    <div class="text-xs font-bold text-blue-600 uppercase">Proses Utama</div>
+                    <h3 class="text-lg font-bold text-slate-900 mt-1">ESP32</h3>
+                    <p class="text-sm text-slate-600 mt-2">Mikrokontroler bertenaga sebagai otak pemrosesan kalkulasi volume cairan secara real-time.</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                    <div class="text-xs font-bold text-blue-600 uppercase">Sistem Input</div>
+                    <h3 class="text-lg font-bold text-slate-900 mt-1">Sensor Ultrasonik</h3>
+                    <p class="text-sm text-slate-600 mt-2">Menggunakan tipe HC-SR04 untuk mengukur jarak permukaan air dari atas tutup botol secara presisi.</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                    <div class="text-xs font-bold text-blue-600 uppercase">Sistem Output</div>
+                    <h3 class="text-lg font-bold text-slate-900 mt-1">Layar OLED 0.96"</h3>
+                    <p class="text-sm text-slate-600 mt-2">Display berukuran padat dengan antarmuka I2C untuk menampilkan sisa volume air dan persentase hidrasi.</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                    <div class="text-xs font-bold text-blue-600 uppercase">Daya Sistem</div>
+                    <h3 class="text-lg font-bold text-slate-900 mt-1">Baterai 18650 3.7V</h3>
+                    <p class="text-sm text-slate-600 mt-2">Suplai daya portabel yang dapat diisi ulang dengan aman menggunakan dukungan modul charger TP4056.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARA KERJA (Berdasarkan Cuplikan layar 2026-05-30 100956.jpg) -->
+    <section id="cara-kerja" class="px-6 py-16 max-w-4xl mx-auto">
+        <div class="text-center">
+            <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Bagaimana Sistem Bekerja?</h2>
+            <p class="text-slate-600 mt-2">Mekanisme otomatisasi pengingat dalam 4 tahapan ringkas.</p>
+        </div>
+
+        <div class="mt-12 space-y-8 relative before:absolute before:inset-0 before:left-4 sm:before:left-1/2 before:w-0.5 before:bg-slate-200">
+            <!-- Langkah 1 -->
+            <div class="relative flex flex-col sm:flex-row items-start sm:items-center group">
+                <div class="absolute left-4 sm:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm z-10">1</div>
+                <div class="w-full sm:w-1/2 pl-12 sm:pl-0 sm:pr-8 sm:text-right">
+                    <h4 class="text-lg font-bold text-slate-900">Pengukuran Jarak</h4>
+                    <p class="text-sm text-slate-600 mt-1">Sensor ultrasonik mendeteksi jarak pantulan permukaan air dengan dasar fisik wadah botol.</p>
+                </div>
+                <div class="w-full sm:w-1/2 hidden sm:block"></div>
+            </div>
+            <!-- Langkah 2 -->
+            <div class="relative flex flex-col sm:flex-row items-start sm:items-center group">
+                <div class="absolute left-4 sm:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm z-10">2</div>
+                <div class="w-full sm:w-1/2 hidden sm:block"></div>
+                <div class="w-full sm:w-1/2 pl-12 sm:pl-8">
+                    <h4 class="text-lg font-bold text-slate-900">Kalkulasi Data</h4>
+                    <p class="text-sm text-slate-600 mt-1">Data mentah jarak diolah langsung oleh mikrokontroler ESP32 untuk dikonversi menjadi satuan volume mililiter (ml).</p>
+                </div>
+            </div>
+            <!-- Langkah 3 -->
+            <div class="relative flex flex-col sm:flex-row items-start sm:items-center group">
+                <div class="absolute left-4 sm:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm z-10">3</div>
+                <div class="w-full sm:w-1/2 pl-12 sm:pl-0 sm:pr-8 sm:text-right">
+                    <h4 class="text-lg font-bold text-slate-900">Visualisasi Display</h4>
+                    <p class="text-sm text-slate-600 mt-1">Hasil perhitungan sisa volume cairan ditampilkan secara langsung pada panel layar OLED di atas penutup botol.</p>
+                </div>
+                <div class="w-full sm:w-1/2 hidden sm:block"></div>
+            </div>
+            <!-- Langkah 4 -->
+            <div class="relative flex flex-col sm:flex-row items-start sm:items-center group">
+                <div class="absolute left-4 sm:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm z-10">4</div>
+                <div class="w-full sm:w-1/2 hidden sm:block"></div>
+                <div class="w-full sm:w-1/2 pl-12 sm:pl-8">
+                    <h4 class="text-lg font-bold text-slate-900">Notifikasi Alarm Aktif</h4>
+                    <p class="text-sm text-slate-600 mt-1">Jika data konsumsi air harian terdeteksi kurang dari batas target, buzzer internal akan berbunyi sebagai pengingat aktif.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOKASI & RITEL -->
+    <section id="lokasi" class="bg-blue-600 text-white px-6 py-16 text-center">
+        <div class="max-w-xl mx-auto">
+            <h2 class="text-3xl font-bold tracking-tight">Dapatkan Langsung di Kampus</h2>
+            <p class="text-blue-100 mt-3 leading-relaxed">
+                Khusus mahasiswa Institut Teknologi Sumatera (Itera), Anda bisa melihat fisik produk, menguji fungsionalitas komponen, dan membelinya langsung melalui jaringan kemitraan ritel kami.
+            </p>
+            <div class="inline-flex items-center gap-2 bg-blue-700 border border-blue-500/50 px-4 py-2 rounded-xl text-sm font-semibold mt-6">
+                📍 Kantin Kampus Itera, Lampung Selatan
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 text-xs px-6 py-8 border-t border-slate-800 text-center">
+        <p>&copy; 2026 PT Bougenville. Hak Cipta Dilindungi Undang-Undang.</p>
+        <p class="mt-2 text-slate-600">Dikembangkan khusus sebagai bagian dari proyek kelayakan usaha inkubasi bisnis.</p>
+    </footer>
+
+</body>
+</html>
